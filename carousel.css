@@ -1,0 +1,53 @@
+.carousel-container{
+    animation: appear 3s ease forwards;
+    padding-top: 50px;
+    width: 50%;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+}
+
+@keyframes appear {
+    from {transform: translateY(0); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+
+.carousel-slide{
+    display: flex;
+}
+
+.carousel-slide img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel__button {
+    animation: appear 3s ease forwards;
+    width: 20px;
+    background: transparent;
+    border: 0px;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel__button:hover {
+    background: transparent;
+    border: 0px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.prevBtn {
+    position: absolute;
+    padding-top: 30px;
+    left: 45%;
+    cursor: pointer;
+}
+
+.nextBtn {
+    position: absolute;
+    padding-top: 30px;
+    right: 45%;
+    cursor: pointer;
+}

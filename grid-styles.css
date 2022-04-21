@@ -1,0 +1,27 @@
+.grid-container {
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.imagestyle {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.imagestyle:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+
+}
